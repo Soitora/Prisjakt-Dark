@@ -20,4 +20,4 @@ jobs:
           npm ci
       - name: Compile files
         run: |
-          npm run compile
+          pnpm compile

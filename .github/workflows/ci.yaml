@@ -23,13 +23,13 @@ jobs:
           npm ci
       - name: Clean files
         run: |
-          npm run clean
+          pnpm clean
       - name: Convert Stylus to CSS
         run: |
-          npm run stylus
+          pnpm stylus
       - name: Compile files
         run: |
-          npm run compile-single
+          pnpm compile-single
       - name: Deploy files
         uses: JamesIves/github-pages-deploy-action@v4
         with:

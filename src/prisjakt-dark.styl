@@ -30,10 +30,10 @@ var-filter-light = brightness(0) saturate(100%) invert(92%) sepia(0) saturate(48
 var-filter-grey = sepia(0) saturate(0.29) brightness(67%) contrast(184%) hue-rotate(179deg) invert(8%)
 var-black = #000000
 var-white = #ffffff
-var-beige = #9c6500
+var-orange = #8a631b
 var-blue = #305d84
 var-green = #1c5a00
-var-pink = #b34d84
+var-pink = #ac1c40
 var-purple = #8e78a2
 
 if (var-scrollbar-style == "scrollbar-custom") {
@@ -64,3 +64,146 @@ if (var-scrollbar-style == "scrollbar-custom") {
 	}
 }
 
+filter() {
+	filter: arguments
+	-moz-filter: arguments
+	-ms-filter: arguments
+	-o-filter: arguments
+	-webkit-filter: arguments
+}
+
+border-radius() {
+	border-radius: arguments
+	-moz-border-radius: arguments
+	-ms-border-radius: arguments
+	-o-border-radius: arguments
+	-webkit-border-radius: arguments
+}
+
+box-shadow() {
+	box-shadow: arguments
+	-moz-box-shadow: arguments
+	-ms-box-shadow: arguments
+	-o-box-shadow: arguments
+	-webkit-box-shadow: arguments
+}
+
+user-select(n) {
+	user-select: n
+	-moz-user-select: n
+	-ms-user-select: n
+	-o-user-select: n
+	-webkit-user-select: n
+}
+
+body {
+	background-color: var-background-1 !important
+	color: var-text-2 !important
+}
+
+a,
+.link {
+	color: var-blue
+}
+
+a:hover,
+a:hover>.label,
+.link:hover,
+.link:hover>.label {
+	text-decoration: var-hover-text
+	opacity: var-hover-opacity
+}
+
+img {
+	filter: brightness(var-image-brightness)
+}
+
+// Loading thingies
+.jiXTaf,
+.ffFRsJ,
+.boqdHv,
+.fNITnJ,
+.qAClZ,
+.ggwIZf,
+.jJMYDF,
+.lnCZYn,
+.kdTKVb,
+.dhEdhV {
+	background-color: var-on-background-2
+	background-image: linear-gradient(90deg, var-on-background-2, lighten(var-on-background-2, 5%), lighten(var-on-background-2, 10%))
+}
+
+// Cards
+.ojnnt,
+.cXsBHp,
+.dTwFsg {
+	background-color: var-on-background-1
+	box-shadow: var-box-shadow-inset
+	color: var-text-1
+}
+
+// Cards buttons
+.jZgPkD {
+	background-color: var-blue
+	box-shadow: var-box-shadow-inset
+
+	&:hover {
+		background-color: darken(var-blue, 10%) !important
+		box-shadow: var-box-shadow-inset
+	}
+}
+
+.izpwyl {
+	background-color: var-orange
+
+	span {
+		color: var-text-1
+	}
+}
+
+.gpIYpP {
+	background-color: var-pink
+
+	span {
+		color: var-text-1
+	}
+}
+
+.LyeLN {
+	color: var-pink
+}
+
+.jKnKKv {
+	color: var-text-2
+}
+
+// Header
+.hzEaUE,
+.cGMvZJ {
+	background-color: var-blue
+}
+
+@media screen and (min-width: 40em) {
+	.hzGYcu {
+		filter: brightness(var-image-brightness)
+	}
+}
+
+// Sidebar
+.dAOMaA,
+.hkzBRc {
+	background-color: var-on-background-1
+}
+
+// Footer
+.jiYIuO,
+.jkuyEJ,
+.dxhXPk,
+.gccpPP {
+	background-color: var-background-1
+}
+
+.AAHWe,
+.iJzkAV {
+	background-color: var-on-background-1
+}
