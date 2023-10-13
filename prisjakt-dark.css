@@ -1,0 +1,118 @@
+/* ==UserStyle==
+@name			Prisjakt Dark
+@description	A modern dark theme for Prisjakt
+@version		23.286.2134
+@license		MPL-2.0
+@author			Soitora <simon.mattila@protonmail.com> (https://soitora.com)
+@namespace		https://github.com/Soitora
+@homepageURL	https://github.com/Soitora/Prisjakt-Dark
+@supportURL		https://github.com/Soitora/Prisjakt-Dark/issues
+@updateURL		https://raw.githubusercontent.com/Soitora/Prisjakt-Dark/gh-pages/prisjakt-dark.css
+==/UserStyle== */
+body {
+  background-color: #121212 !important;
+  color: #aaa !important;
+}
+a,
+.link {
+  color: #305d84;
+}
+a:hover,
+a:hover>.label,
+.link:hover,
+.link:hover>.label {
+  text-decoration: none;
+  opacity: 0.8;
+}
+img {
+  filter: brightness(0.75);
+  -moz-filter: brightness(0.75);
+  -ms-filter: brightness(0.75);
+  -o-filter: brightness(0.75);
+  -webkit-filter: brightness(0.75);
+}
+.jiXTaf,
+.ffFRsJ,
+.boqdHv,
+.fNITnJ,
+.qAClZ,
+.ggwIZf,
+.jJMYDF,
+.lnCZYn,
+.kdTKVb,
+.dhEdhV {
+  background-color: #161617;
+  background-image: linear-gradient(90deg, #161617, #212123, #2d2d2f);
+}
+.ojnnt,
+.cXsBHp,
+.dTwFsg {
+  background-color: #1d1d1f;
+  box-shadow: inset 0 0 0 1px #101013;
+  -moz-box-shadow: inset 0 0 0 1px #101013;
+  -ms-box-shadow: inset 0 0 0 1px #101013;
+  -o-box-shadow: inset 0 0 0 1px #101013;
+  -webkit-box-shadow: inset 0 0 0 1px #101013;
+  color: #c8c8c8;
+}
+.jZgPkD {
+  background-color: #305d84;
+  box-shadow: inset 0 0 0 1px #101013;
+  -moz-box-shadow: inset 0 0 0 1px #101013;
+  -ms-box-shadow: inset 0 0 0 1px #101013;
+  -o-box-shadow: inset 0 0 0 1px #101013;
+  -webkit-box-shadow: inset 0 0 0 1px #101013;
+}
+.jZgPkD:hover {
+  background-color: #2b5477 !important;
+  box-shadow: inset 0 0 0 1px #101013;
+  -moz-box-shadow: inset 0 0 0 1px #101013;
+  -ms-box-shadow: inset 0 0 0 1px #101013;
+  -o-box-shadow: inset 0 0 0 1px #101013;
+  -webkit-box-shadow: inset 0 0 0 1px #101013;
+}
+.izpwyl {
+  background-color: #8a631b;
+}
+.izpwyl span {
+  color: #c8c8c8;
+}
+.gpIYpP {
+  background-color: #ac1c40;
+}
+.gpIYpP span {
+  color: #c8c8c8;
+}
+.LyeLN {
+  color: #ac1c40;
+}
+.jKnKKv {
+  color: #aaa;
+}
+.hzEaUE,
+.cGMvZJ {
+  background-color: #305d84;
+}
+@media screen and (min-width: 40em) {
+  .hzGYcu {
+    filter: brightness(0.75);
+    -moz-filter: brightness(0.75);
+    -ms-filter: brightness(0.75);
+    -o-filter: brightness(0.75);
+    -webkit-filter: brightness(0.75);
+  }
+}
+.dAOMaA,
+.hkzBRc {
+  background-color: #1d1d1f;
+}
+.jiYIuO,
+.jkuyEJ,
+.dxhXPk,
+.gccpPP {
+  background-color: #121212;
+}
+.AAHWe,
+.iJzkAV {
+  background-color: #1d1d1f;
+}
