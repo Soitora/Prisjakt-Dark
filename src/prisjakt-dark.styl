@@ -1,0 +1,66 @@
+var-background-1 ?= #121212
+var-background-2 ?= #1D1D1F
+var-background-3 ?= #2A2A2C
+var-text-1 ?= #C8C8C8
+var-text-2 ?= #AAAAAA
+var-border-color ?= #101013
+var-border-color-light ?= #3B3B3B
+var-highlight ?= #2A2A2D
+var-warning ?= #EE4757
+var-theme ?= #ff3366
+var-theme-shade ?= shade(var-theme, 20%)
+var-theme-text ?= #FFFFFF
+var-image-brightness ?= 0.75
+var-scrollbar-style ?= scrollbar-original
+var-on-background-1 = var-background-2
+var-on-background-2 = darken(var-background-2, 25%)
+var-on-background-2-button = lighten(var-background-2, 3%)
+var-border = 1px solid var-border-color
+var-border-light = 1px solid var-border-color-light
+var-border-radius = 0.6rem
+var-hover-opacity = 0.8
+var-hover-text = none
+var-box-shadow = 0 0 0 1px var-border-color
+var-box-shadow-light = 0 0 0 1px var-border-color-light
+var-box-shadow-inset = inset 0 0 0 1px var-border-color
+var-box-shadow-inset-light = inset 0 0 0 1px var-border-color-light
+var-box-shadow-warning = 0 0 0 1px var-warning
+var-text-shadow = 1px 1px 2px var-black
+var-filter-light = brightness(0) saturate(100%) invert(92%) sepia(0) saturate(489%) hue-rotate(229deg) brightness(90%) contrast(86%)
+var-filter-grey = sepia(0) saturate(0.29) brightness(67%) contrast(184%) hue-rotate(179deg) invert(8%)
+var-black = #000000
+var-white = #ffffff
+var-beige = #9c6500
+var-blue = #305d84
+var-green = #1c5a00
+var-pink = #b34d84
+var-purple = #8e78a2
+
+if (var-scrollbar-style == "scrollbar-custom") {
+	::-webkit-scrollbar {
+		width: 17px
+		height: 12px
+	}
+
+	::-webkit-scrollbar-corner {
+		background: var-background-1
+	}
+
+	::-webkit-scrollbar-thumb {
+		border-right: 4px solid var-background-1 !important
+		border-left: 4px solid var-background-1 !important
+		background: var-theme
+	}
+
+	::-webkit-scrollbar-track {
+		background: var-background-1
+	}
+
+	::-webkit-resizer {
+		background-image: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAABB0lEQVQ4jcXSvytHYRQG8I9fZWNg8A8og0wMyKKMFEpZlPxYZaEsysJCFuprUSYs6ptQshlYLUa7JAsGSW+9V7fb/fK9GZzp7X3O8/Q85xx/rZrAfylNFJEJnDU8Ns0dbtcWNFCHElbQGT6KCDTiGDPYwGz4rK+S3IwTDGARWwlQjUAbztGBKRykwd8E2nGBVozgLNvwk0A3TuOcBnGT11RpiEO4wiv6M+QG7GK5ksAkynhAH+5TWIhyifnEfTbCAjZxjWE8p7CuuIkWjMb3t4NwXetxPeUYIU0ej6Kf6E3IaYE9LGEfY3hLkVdxhFv04C5viCFnuK5pfGRivWMnunrKn/m/Fb4AFQsvGVJYWLQAAAAASUVORK5CYII=") !important
+		background-position: 3px 3px !important
+		background-size: 12px auto !important
+		background-repeat: no-repeat !important
+	}
+}
+

@@ -1,0 +1,45 @@
+name: CI/CD
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  compile-and-publish:
+    name: Compile and Publish
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout project
+        uses: actions/checkout@v3
+        with:
+          token: ${{ secrets.ACCESS_TOKEN }}
+      - name: Setup Node.js
+        uses: actions/setup-node@v3
+        with:
+          node-version: 16.x
+      - name: Install dependencies
+        run: |
+          npm ci
+      - name: Clean files
+        run: |
+          npm run clean
+      - name: Convert Stylus to CSS
+        run: |
+          npm run stylus
+      - name: Compile files
+        run: |
+          npm run compile-single
+      - name: Deploy files
+        uses: JamesIves/github-pages-deploy-action@v4
+        with:
+          folder: dist
+          token: ${{ secrets.ACCESS_TOKEN }}
+          branch: gh-pages
+          clean-exclude: |
+            assets
+            images
+            LICENSE
+            favicon.ico
+            index.html
+          commit-message: ${{ github.event.head_commit.message }} @ ${{ github.sha }} 🚀
